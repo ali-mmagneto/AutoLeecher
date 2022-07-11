@@ -2,7 +2,7 @@ import os
 
 class Config(object):
     # get a token from @BotFather
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+    STRING_SESSION = os.environ.get("BOT_TOKEN", "")
     # The Telegram API things
     APP_ID = int(os.environ.get("APP_ID", 12345))
     API_HASH = os.environ.get("API_HASH")
@@ -13,7 +13,7 @@ class Config(object):
     DOWNLOAD_LOC = "./DOWNLOADS"
     # Telegram maximum file upload size
     MAX_SIZE = 50000000
-    TG_MAX_SIZE = 2097152000
+    TG_MAX_SIZE = 4097152000
     FREE_UZR_MAX_SIZE = 50000000
     # chunk size that should be used with requests
     CHUNK_SIZE = int(os.environ.get("CHUNK_SIZE", 128))
