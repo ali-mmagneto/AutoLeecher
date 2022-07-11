@@ -12,7 +12,7 @@ import os
 
 from apdbot import (
     DOWNLOAD_LOC,
-    BOT_TOKEN,
+    STRING_SESSION,
     APP_ID,
     API_HASH,
     AUTH,
@@ -56,8 +56,7 @@ if __name__ == "__main__" :
         os.makedirs(DOWNLOAD_LOC)
     #
     app = Client(
-        "APDBot",
-        bot_token=BOT_TOKEN,
+        session_name=STRING_SESSION,
         api_id=APP_ID,
         api_hash=API_HASH,
         workers=343
